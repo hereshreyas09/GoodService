@@ -1,37 +1,113 @@
-console.log("GSF Website Loaded Successfully");
+// LOADER
 
-/* NAVBAR ACTIVE LINK */
+window.addEventListener("load", () => {
 
-const links = document.querySelectorAll(".nav-links a");
-
-links.forEach(link => {
-
-link.addEventListener("click", () => {
-
-links.forEach(item => {
-item.classList.remove("active");
-});
-
-link.classList.add("active");
+  document.getElementById("loader").style.display = "none";
 
 });
 
-});
+// SCROLL ANIMATION
 
-/* SCROLL ANIMATION */
+function reveal(){
 
-window.addEventListener("scroll", () => {
+  const reveals = document.querySelectorAll(".reveal");
 
-const navbar = document.querySelector(".navbar");
+  reveals.forEach((element) => {
 
-if(window.scrollY > 50){
+    const windowHeight = window.innerHeight;
+    const elementTop = element.getBoundingClientRect().top;
 
-navbar.style.boxShadow = "0 5px 20px rgba(0,0,0,0.15)";
+    if(elementTop < windowHeight - 100){
 
-}else{
+      element.classList.add("active");
 
-navbar.style.boxShadow = "none";
+    }
+
+  });
 
 }
+
+window.addEventListener("scroll", reveal);
+
+reveal();
+
+// FAQ
+
+const questions = document.querySelectorAll(".faq-question");
+
+questions.forEach((question) => {
+
+  question.addEventListener("click", () => {
+
+    const answer = question.nextElementSibling;
+
+    if(answer.style.display === "block"){
+
+      answer.style.display = "none";
+
+    } else {
+
+      answer.style.display = "block";
+
+    }
+
+  });
+
+});
+
+// EMI CALCULATOR
+
+function calculateEMI(){
+
+  let amount =
+  document.getElementById("loanAmount").value;
+
+  let interest =
+  document.getElementById("interestRate").value / 12 / 100;
+
+  let months =
+  document.getElementById("loanMonths").value;
+
+  let emi =
+  (amount * interest * Math.pow(1 + interest, months)) /
+  (Math.pow(1 + interest, months) - 1);
+
+  document.getElementById("emiResult").innerHTML =
+  "Monthly EMI: ₹" + emi.toFixed(2);
+
+}
+
+// COUNTER ANIMATION
+
+const counters = document.querySelectorAll(".counter");
+
+counters.forEach(counter => {
+
+  counter.innerText = '0';
+
+  const updateCounter = () => {
+
+    const target = +counter.getAttribute('data-target');
+
+    const c = +counter.innerText;
+
+    const increment = target / 200;
+
+    if(c < target){
+
+      counter.innerText =
+      `${Math.ceil(c + increment)}`;
+
+      setTimeout(updateCounter, 10);
+
+    } else {
+
+      counter.innerText = target;
+
+    }
+
+  };
+
+  updateCounter();
 
 });
