@@ -1,30 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
 
   <title>
-    Good Service Finance Consultancy | Housing Loan & Business Loan in Agra
+    Good Service Finance Consultancy | Finance Consultancy in Agra
   </title>
 
   <meta name="description"
-    content="Good Service Finance Consultancy provides Housing Loan, LAP, Personal Loan, Plot Purchase and Business Loan consultancy in Agra.">
+    content="Good Service Finance Consultancy provides Housing Loan, Business Loan, Loan Against Property and Personal Loan consultancy services in Agra.">
 
   <meta name="keywords"
-    content="Housing Loan Agra, Business Loan Agra, Loan Against Property Agra, Finance Consultancy Agra">
+    content="Housing Loan Agra, Business Loan Agra, Finance Consultancy Agra, Loan Against Property Agra">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- GOOGLE FONT -->
+
+  <link rel="preconnect"
+    href="https://fonts.googleapis.com">
+
+  <link rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin>
 
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet">
 
+  <!-- FONT AWESOME -->
+
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-  <link rel="stylesheet" href="style.css">
+  <!-- CSS -->
+
+  <link rel="stylesheet"
+    href="style.css">
+
+  <link rel="stylesheet"
+    href="responsive.css">
+
+  <link rel="stylesheet"
+    href="animations.css">
 
 </head>
 
@@ -33,7 +53,9 @@
   <!-- LOADER -->
 
   <div id="loader">
-    <div class="loader-circle"></div>
+
+    <div class="loader"></div>
+
   </div>
 
   <!-- WHATSAPP -->
@@ -52,34 +74,35 @@
 
     <nav>
 
-      <div class="logo">
+      <div class="logo-wrap">
 
-        <div class="logo-icon">
-          <i class="fa-solid fa-house"></i>
-        </div>
+        <img src="images/logo.png"
+          alt="Good Service Finance Consultancy Logo"
+          class="logo">
 
-        <div>
-          <h1>Good Service</h1>
-          <span>Finance Consultancy</span>
+        <div class="logo-text">
+
+          <h2>Good Service</h2>
+
+          <p>Finance Consultancy</p>
+
         </div>
 
       </div>
 
       <div class="nav-links">
 
+        <a href="#home">Home</a>
+
         <a href="#services">Services</a>
-        <a href="#about">About</a>
+
         <a href="#calculator">EMI Calculator</a>
+
         <a href="#blogs">Blogs</a>
+
         <a href="#faq">FAQ</a>
+
         <a href="#contact">Contact</a>
-
-        <a href="tel:7055025777"
-          class="call-btn">
-
-          Call Now
-
-        </a>
 
       </div>
 
@@ -89,80 +112,43 @@
 
   <!-- HERO -->
 
-  <section class="hero">
+  <section class="hero"
+    id="home">
 
-    <div class="hero-content">
+    <div class="hero-overlay"></div>
 
-      <div class="hero-left reveal">
+    <div class="hero-content reveal">
 
-        <h2>
+      <h1>
 
-          GOOD SERVICE
-          <span>FINANCE CONSULTANCY</span>
+        Trusted Finance Consultancy
+        In Agra
 
-        </h2>
+      </h1>
 
-        <p>
+      <p>
 
-          Trusted consultancy in Agra for Housing Loan,
-          Loan Against Property (LAP), Plot Purchase,
-          Personal Loan and Business Loan services.
+        Professional consultancy for Housing Loan,
+        Loan Against Property, Personal Loan,
+        Business Loan and Plot Purchase services.
 
-        </p>
+      </p>
 
-        <div class="hero-buttons">
+      <div class="hero-buttons">
 
-          <a href="tel:7055025777"
-            class="btn-primary">
+        <a href="#contact"
+          class="primary-btn">
 
-            Call Now
+          Get Consultation
 
-          </a>
+        </a>
 
-          <a href="#contact"
-            class="btn-secondary">
+        <a href="tel:7055025777"
+          class="secondary-btn">
 
-            Visit Office
+          Call Now
 
-          </a>
-
-        </div>
-
-      </div>
-
-      <div class="hero-right reveal">
-
-        <div class="service-card">
-          <i class="fa-solid fa-house"></i>
-          <div>
-            <h3>Housing Loan</h3>
-            <p>Easy and affordable home loans</p>
-          </div>
-        </div>
-
-        <div class="service-card">
-          <i class="fa-solid fa-chart-line"></i>
-          <div>
-            <h3>Loan Against Property</h3>
-            <p>Unlock your property value</p>
-          </div>
-        </div>
-
-        <div class="service-card">
-          <i class="fa-solid fa-location-dot"></i>
-          <div>
-            <h3>Plot Purchase</h3>
-            <p>Find your perfect plot</p>
-          </div>
-        </div>
-
-        <div class="service-card">
-          <i class="fa-solid fa-briefcase"></i>
-          <div>
-            <h3>Business Loan</h3>
-            <p>Support for every business need</p>
-          </div>
-        </div>
+        </a>
 
       </div>
 
@@ -172,64 +158,177 @@
 
   <!-- COUNTERS -->
 
-  <section class="counter-section">
+  <section class="counters">
 
-    <div class="counter-box reveal">
-      <h2 class="counter" data-target="500">0</h2>
+    <div class="counter-card reveal">
+
+      <h2 class="counter"
+        data-target="500">
+
+        0
+
+      </h2>
+
       <p>Happy Clients</p>
+
     </div>
 
-    <div class="counter-box reveal">
-      <h2 class="counter" data-target="10">0</h2>
+    <div class="counter-card reveal">
+
+      <h2 class="counter"
+        data-target="10">
+
+        0
+
+      </h2>
+
       <p>Years Experience</p>
+
     </div>
 
-    <div class="counter-box reveal">
-      <h2 class="counter" data-target="1000">0</h2>
+    <div class="counter-card reveal">
+
+      <h2 class="counter"
+        data-target="1000">
+
+        0
+
+      </h2>
+
       <p>Loan Consultations</p>
+
     </div>
 
-    <div class="counter-box reveal">
-      <h2 class="counter" data-target="98">0</h2>
+    <div class="counter-card reveal">
+
+      <h2 class="counter"
+        data-target="98">
+
+        0
+
+      </h2>
+
       <p>Success Rate %</p>
+
     </div>
 
   </section>
 
   <!-- SERVICES -->
 
-  <section id="services" class="section">
+  <section class="services"
+    id="services">
 
-    <div class="section-title reveal">
+    <h2 class="section-title reveal">
 
-      <h2>Our Services</h2>
+      Our Services
 
-      <p>
-        Professional finance consultancy solutions in Agra.
-      </p>
+    </h2>
+
+    <div class="service-grid">
+
+      <div class="service-box reveal">
+
+        <i class="fa-solid fa-house"></i>
+
+        <h3>Housing Loan</h3>
+
+        <p>
+
+          Affordable home loan consultancy with complete guidance.
+
+        </p>
+
+      </div>
+
+      <div class="service-box reveal">
+
+        <i class="fa-solid fa-building"></i>
+
+        <h3>Loan Against Property</h3>
+
+        <p>
+
+          Secure funding using residential or commercial property.
+
+        </p>
+
+      </div>
+
+      <div class="service-box reveal">
+
+        <i class="fa-solid fa-wallet"></i>
+
+        <h3>Personal Loan</h3>
+
+        <p>
+
+          Quick personal loan consultancy support.
+
+        </p>
+
+      </div>
+
+      <div class="service-box reveal">
+
+        <i class="fa-solid fa-briefcase"></i>
+
+        <h3>Business Loan</h3>
+
+        <p>
+
+          Financial solutions for startups and businesses.
+
+        </p>
+
+      </div>
 
     </div>
 
-    <div class="services-grid">
+  </section>
 
-      <div class="service-box reveal">
-        <i class="fa-solid fa-house"></i>
-        <h3>Housing Loan</h3>
+  <!-- WHY CHOOSE US -->
+
+  <section class="why-section">
+
+    <h2 class="section-title reveal">
+
+      Why Choose Us
+
+    </h2>
+
+    <div class="why-grid">
+
+      <div class="why-card reveal">
+
+        <i class="fa-solid fa-user-check"></i>
+
+        <h3>Trusted Consultancy</h3>
+
       </div>
 
-      <div class="service-box reveal">
-        <i class="fa-solid fa-building"></i>
-        <h3>Loan Against Property</h3>
+      <div class="why-card reveal">
+
+        <i class="fa-solid fa-file-circle-check"></i>
+
+        <h3>Easy Documentation</h3>
+
       </div>
 
-      <div class="service-box reveal">
-        <i class="fa-solid fa-wallet"></i>
-        <h3>Personal Loan</h3>
+      <div class="why-card reveal">
+
+        <i class="fa-solid fa-headset"></i>
+
+        <h3>Customer Support</h3>
+
       </div>
 
-      <div class="service-box reveal">
-        <i class="fa-solid fa-briefcase"></i>
-        <h3>Business Loan</h3>
+      <div class="why-card reveal">
+
+        <i class="fa-solid fa-clock"></i>
+
+        <h3>Fast Processing</h3>
+
       </div>
 
     </div>
@@ -238,17 +337,14 @@
 
   <!-- EMI CALCULATOR -->
 
-  <section id="calculator" class="section calculator-section">
+  <section class="calculator"
+    id="calculator">
 
-    <div class="section-title reveal">
+    <h2 class="section-title reveal">
 
-      <h2>EMI Calculator</h2>
+      EMI Calculator
 
-      <p>
-        Calculate your monthly loan EMI instantly.
-      </p>
-
-    </div>
+    </h2>
 
     <div class="calculator-box reveal">
 
@@ -258,59 +354,23 @@
 
       <input type="number"
         id="interestRate"
-        placeholder="Interest Rate %">
+        placeholder="Interest Rate (%)">
 
       <input type="number"
         id="loanMonths"
         placeholder="Loan Tenure (Months)">
 
       <button onclick="calculateEMI()">
+
         Calculate EMI
+
       </button>
 
       <h3 id="emiResult">
+
         Monthly EMI: ₹0
+
       </h3>
-
-    </div>
-
-  </section>
-
-  <!-- GOOGLE REVIEWS -->
-
-  <section class="section reviews-section">
-
-    <div class="section-title reveal">
-
-      <h2>Client Reviews</h2>
-
-    </div>
-
-    <div class="reviews-grid">
-
-      <div class="review-card reveal">
-        <i class="fa-solid fa-star"></i>
-        <p>
-          Excellent support for housing loan process.
-        </p>
-        <h4>- Client Review</h4>
-      </div>
-
-      <div class="review-card reveal">
-        <i class="fa-solid fa-star"></i>
-        <p>
-          Very professional finance consultancy service.
-        </p>
-        <h4>- Client Review</h4>
-      </div>
-
-      <div class="review-card reveal">
-        <i class="fa-solid fa-star"></i>
-        <p>
-          Smooth documentation and quick response.
-        </p>
-        <h4>- Client Review</h4>
-      </div>
 
     </div>
 
@@ -318,27 +378,55 @@
 
   <!-- BLOGS -->
 
-  <section id="blogs" class="section">
+  <section class="blogs"
+    id="blogs">
 
-    <div class="section-title reveal">
+    <h2 class="section-title reveal">
 
-      <h2>Finance Blogs</h2>
+      Finance Blogs
 
-    </div>
+    </h2>
 
     <div class="blog-grid">
 
-      <div class="blog-card reveal">
-        <h3>How to Get Housing Loan in Agra</h3>
-      </div>
+      <a href="blogs/housing-loan-agra.html"
+        class="blog-card reveal">
 
-      <div class="blog-card reveal">
-        <h3>Benefits of Loan Against Property</h3>
-      </div>
+        <img src="images/blogs/housing-loan.jpg">
 
-      <div class="blog-card reveal">
-        <h3>Best Business Loan Tips</h3>
-      </div>
+        <h3>
+
+          How To Get Housing Loan In Agra
+
+        </h3>
+
+      </a>
+
+      <a href="blogs/lap-loan-guide.html"
+        class="blog-card reveal">
+
+        <img src="images/blogs/lap-loan.jpg">
+
+        <h3>
+
+          Benefits Of Loan Against Property
+
+        </h3>
+
+      </a>
+
+      <a href="blogs/business-loan-tips.html"
+        class="blog-card reveal">
+
+        <img src="images/blogs/business-loan.jpg">
+
+        <h3>
+
+          Business Loan Tips For Startups
+
+        </h3>
+
+      </a>
 
     </div>
 
@@ -346,44 +434,60 @@
 
   <!-- FAQ -->
 
-  <section id="faq" class="section faq-section">
+  <section class="faq-section"
+    id="faq">
 
-    <div class="section-title reveal">
+    <h2 class="section-title reveal">
 
-      <h2>Frequently Asked Questions</h2>
+      Frequently Asked Questions
+
+    </h2>
+
+    <div class="faq reveal">
+
+      <button class="faq-question">
+
+        What documents are required for housing loan?
+
+      </button>
+
+      <div class="faq-answer">
+
+        Aadhar Card, PAN Card, income proof,
+        bank statement and property documents.
+
+      </div>
 
     </div>
 
-    <div class="faq-container">
+    <div class="faq reveal">
 
-      <div class="faq reveal">
-        <button class="faq-question">
-          What documents are required for a housing loan?
-        </button>
+      <button class="faq-question">
 
-        <div class="faq-answer">
-          Identity proof, address proof, income proof and property papers.
-        </div>
+        How long does loan approval take?
+
+      </button>
+
+      <div class="faq-answer">
+
+        Usually between 3 to 7 working days.
+
       </div>
 
-      <div class="faq reveal">
-        <button class="faq-question">
-          How long does loan approval take?
-        </button>
+    </div>
 
-        <div class="faq-answer">
-          Usually between 3 to 7 working days.
-        </div>
-      </div>
+    <div class="faq reveal">
 
-      <div class="faq reveal">
-        <button class="faq-question">
-          Can self-employed people get business loans?
-        </button>
+      <button class="faq-question">
 
-        <div class="faq-answer">
-          Yes, self-employed individuals can apply for business loans.
-        </div>
+        Can self-employed people apply for loans?
+
+      </button>
+
+      <div class="faq-answer">
+
+        Yes, self-employed professionals and business owners can apply.
+
       </div>
 
     </div>
@@ -392,49 +496,137 @@
 
   <!-- CONTACT -->
 
-  <section id="contact" class="section">
+  <section class="contact"
+    id="contact">
 
-    <div class="section-title reveal">
+    <h2 class="section-title reveal">
 
-      <h2>Contact Us</h2>
+      Contact Us
 
-    </div>
+    </h2>
 
     <div class="contact-grid">
 
+      <!-- LEFT -->
+
       <div class="contact-box reveal">
 
-        <h3>Good Service Finance Consultancy</h3>
+        <h3>
 
-        <p><strong>Phone:</strong> 7055025777</p>
+          Good Service Finance Consultancy
 
-        <p><strong>Email:</strong> gsfinanceconsultancy@gmail.com</p>
+        </h3>
 
-        <p><strong>GSTIN:</strong> 09AHOPC1052D1ZR</p>
+        <p>
 
-        <p><strong>Location:</strong> Near Rahvat Place, Gwalior Road, Agra</p>
+          <strong>Phone:</strong>
+          7055025777
 
-        <form class="inquiry-form">
+        </p>
+
+        <p>
+
+          <strong>Email:</strong>
+          gsfinanceconsultancy@gmail.com
+
+        </p>
+
+        <p>
+
+          <strong>GSTIN:</strong>
+          09AHOPC1052D1ZR
+
+        </p>
+
+        <p>
+
+          <strong>Location:</strong>
+          Near Rahvat Place, Gwalior Road, Agra
+
+        </p>
+
+        <!-- FORM -->
+
+        <form
+          action="https://formsubmit.co/gsfinanceconsultancy@gmail.com"
+          method="POST"
+          class="inquiry-form">
+
+          <input type="hidden"
+            name="_captcha"
+            value="false">
+
+          <input type="hidden"
+            name="_template"
+            value="table">
+
+          <input type="hidden"
+            name="_subject"
+            value="New Finance Inquiry">
+
+          <input type="hidden"
+            name="_autoresponse"
+            value="Thank you for contacting Good Service Finance Consultancy. We will contact you shortly.">
 
           <input type="text"
-            placeholder="Your Name"
+            name="name"
+            placeholder="Full Name"
+            required>
+
+          <input type="email"
+            name="email"
+            placeholder="Email Address"
             required>
 
           <input type="tel"
+            name="phone"
             placeholder="Phone Number"
             required>
 
-          <textarea placeholder="Your Inquiry"></textarea>
+          <select name="service"
+            required>
+
+            <option value="">
+              Select Service
+            </option>
+
+            <option>
+              Housing Loan
+            </option>
+
+            <option>
+              Loan Against Property
+            </option>
+
+            <option>
+              Personal Loan
+            </option>
+
+            <option>
+              Business Loan
+            </option>
+
+          </select>
+
+          <textarea
+            name="message"
+            placeholder="Write Your Inquiry"
+            required>
+          </textarea>
 
           <button type="submit">
+
             Submit Inquiry
+
           </button>
 
         </form>
 
       </div>
 
-      <div class="reveal">
+      <!-- RIGHT -->
+
+      <div class="map-box reveal">
 
         <iframe
           src="https://maps.google.com/maps?q=Gwalior%20Road%20Agra&t=&z=13&ie=UTF8&iwloc=&output=embed">
@@ -453,44 +645,67 @@
     <div class="footer-grid">
 
       <div>
-        <h3>Good Service Finance Consultancy</h3>
+
+        <h3>
+
+          Good Service Finance Consultancy
+
+        </h3>
 
         <p>
-          Trusted finance consultancy in Agra.
+
+          Trusted finance consultancy in Agra
+          for housing and business loans.
+
         </p>
-      </div>
-
-      <div>
-
-        <h3>SEO Links</h3>
-
-        <a href="#">Housing Loan Agra</a>
-        <a href="#">Business Loan Agra</a>
-        <a href="#">Loan Against Property</a>
-        <a href="#">Personal Loan Agra</a>
 
       </div>
 
       <div>
 
-        <h3>Quick Links</h3>
+        <h3>
 
-        <a href="#services">Services</a>
-        <a href="#blogs">Blogs</a>
-        <a href="#faq">FAQ</a>
-        <a href="#contact">Contact</a>
+          SEO Links
+
+        </h3>
+
+        <a href="#">
+          Housing Loan Agra
+        </a>
+
+        <a href="#">
+          Business Loan Agra
+        </a>
+
+        <a href="#">
+          Personal Loan Agra
+        </a>
+
+        <a href="#">
+          Loan Against Property Agra
+        </a>
 
       </div>
 
     </div>
 
     <p class="copyright">
+
       © 2026 Good Service Finance Consultancy
+
     </p>
 
   </footer>
 
+  <!-- JS -->
+
   <script src="script.js"></script>
+
+  <script src="emi.js"></script>
+
+  <script src="faq.js"></script>
+
+  <script src="counter.js"></script>
 
 </body>
 </html>
